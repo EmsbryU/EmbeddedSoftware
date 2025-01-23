@@ -25,6 +25,7 @@ source-repository head
 
 library
   exposed-modules:
+      Excercise3
       Lib
       SDF_Application
   other-modules:
