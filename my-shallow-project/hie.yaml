@@ -1,0 +1,10 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "my-shallow-project:lib"
+
+    - path: "./app/Main.hs"
+      component: "my-shallow-project:exe:my-shallow-project-exe"
+
+    - path: "./test"
+      component: "my-shallow-project:test:my-shallow-project-test"
