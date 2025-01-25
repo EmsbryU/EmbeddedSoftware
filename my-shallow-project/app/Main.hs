@@ -4,6 +4,9 @@ import Lib
 import SDF_Application
 import Excercise3
 import ForSyDe.Shallow
+import SADF_Tutorial_Example
+
+import Excercise4
 
 -- 2b
 -- main :: IO ()
@@ -15,4 +18,4 @@ import ForSyDe.Shallow
 
 -- 3a
 main :: IO()
-main = print $ system3 $ signal [0..9]
+main = print $ system5 $ signal [0..9]
