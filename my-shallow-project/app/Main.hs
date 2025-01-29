@@ -1,8 +1,11 @@
 module Main (main) where
 
 import Lib
-import SDF_Application
+import Excercise2
 import Excercise3
+import Excercise4
+import Excercise5
+import Excercise8
 import ForSyDe.Shallow
 import SADF_Tutorial_Example
 

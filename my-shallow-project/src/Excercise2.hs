@@ -1,6 +1,6 @@
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Use camelCase" #-}
-module SDF_Application where
+module Excercise2 where
 
 import ForSyDe.Shallow
 

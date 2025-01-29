@@ -25,12 +25,15 @@ source-repository head
 
 library
   exposed-modules:
+      Excercise2
       Excercise3
       Excercise4
       Excercise5
+      Excercise8
       Lib
       SADF_Tutorial_Example
-      SDF_Application
+      VendingMachine
+      VendingMachine2
   other-modules:
       Paths_my_shallow_project
   autogen-modules:
