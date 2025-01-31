@@ -5,8 +5,8 @@ import ForSyDe.Shallow
 
 system3 :: Signal Int -> (Signal Int, Signal Int)
 system3 s_in = (s_out1, s_out2) where
-    s_out1 = a_2 (half s_1)
-    s_out2 = a_3 (half (0:-s_2))
+    s_out1 = a_2 (selectS 0 2 s_1)
+    s_out2 = a_3 (selectS 1 2 s_2)
     (s_1, s_2) = a_1 s_in
 
 a_1 :: Signal Int -> (Signal  Int, Signal Int)
@@ -21,8 +21,5 @@ a_3 :: Signal Int -> Signal Int
 a_3 = actor11SDF 1 1 f_3 where
     f_3 [x] = [-x]
 
-
-
-half :: Signal Int -> Signal Int
-half NullS = NullS
-half (x:-xs) = x :- half (dropS 1 xs)
+--- >>> system3 (takeS 10 (infiniteS (+1) 0))
+-- ({0,2,4,6,8},{-1,-3,-5,-7,-9})
