@@ -27,6 +27,8 @@ library
   exposed-modules:
       Excercise2
       Excercise3
+      Excercise3b
+      Excercise3c
       Excercise4
       Excercise5
       Excercise6
