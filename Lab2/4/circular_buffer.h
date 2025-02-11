@@ -67,7 +67,7 @@ size_t circular_buf_size(cbuf_handle_t cbuf);
 //TODO: int circular_buf_get_range(circular_buf_t cbuf, token *data, size_t len);
 //TODO: int circular_buf_put_range(circular_buf_t cbuf, token * data, size_t len);
 
-#endif //CIRCULAR_BUFFER_H_
+
 
 // The definition of our circular buffer structure is hidden from the user
 struct circular_buf_t {
@@ -220,3 +220,5 @@ bool circular_buf_full(cbuf_handle_t cbuf)
 
     return cbuf->full;
 }
+
+#endif //CIRCULAR_BUFFER_H_

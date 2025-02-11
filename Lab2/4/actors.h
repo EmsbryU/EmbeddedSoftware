@@ -27,7 +27,7 @@ void actor22SDF(int consum1, int consum2, int prod1, int prod2,
     channel *ch_in1, channel *ch_in2, channel *ch_out1, channel *ch_out2, 
     void (*f)(token *, token *, token *, token *));
 
-#endif
+
 
 int readToken(channel ch, token *data)
 {
@@ -131,3 +131,5 @@ void actor22SDF(int consum1, int consum2, int prod1, int prod2,
         writeToken(*ch_out2, output2[i]);
     }
 }
+
+#endif //ACTORS_H_
