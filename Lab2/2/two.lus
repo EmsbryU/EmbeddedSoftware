@@ -1,0 +1,25 @@
+node MACHINE (coin5, coin10: bool) returns (bottle, return_coin: bool);
+var moneyInMachine: bool;
+let
+    assert(not (coin5 and coin10));
+
+    bottle = 
+        if coin10 then true else false 
+        ->
+        if coin10 or (coin5 and pre(moneyInMachine))
+            then true
+            else false;
+
+    return_coin = false -> 
+        if coin10 and pre(moneyInMachine)
+            then true
+            else false;
+
+    moneyInMachine = false -> 
+        if not(coin5 or coin10) 
+            then pre(moneyInMachine) 
+        else
+        if coin5 and not(pre(moneyInMachine)) 
+            then true 
+            else false;
+tel;
