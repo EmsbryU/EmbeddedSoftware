@@ -24,17 +24,5 @@ int main()
             printf("%d ", s_out[i]);
         }
         printf("\n");
-        // s_in1: x y z w
-        // s_in2: u
-        // A1 = (x + y) A2 = (z + w)
-        // B1 = (u) B2 = (u+1)
-        // C = (A1 + A2 + delay)
-        // dlay = (B1 + B2 + C) out1 = (B1 + B2) out2 = delay
-
-        // delay = (B1 + B2 + C)
-        // delay = (u) + (u+1) + (A1 + A2 + delay)
-        // delay,out2 = (u) + (u+1) + ((x + y) + (z + w) + delay)
-        // out1 = ((u) + (u+1))
     }
-
 }
